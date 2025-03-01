@@ -6,13 +6,16 @@ import os
 
 # 配置參數
 ETF_MAP = {
-    'SHK126': 'EWH',
-    'SHK128': 'EPP',
-    'SHK129': 'EZU',
-    'SHK130': 'SPY',
-    'SHK131': 'EWJ',
-    'SHK136': 'MCHI'
-}
+       'SHK126': 'EWH',    # 香港股票
+       'SHK127': 'SPY',    # 国际股票→标普500
+       'SHK128': 'EPP',    # 亚太原除日本
+       'SHK129': 'EZU',    # 欧洲
+       'SHK130': 'SPY',    # 北美（保持原SPY）
+       'SHK131': 'EWJ',    # 日本
+       'SHK136': 'MCHI',   # 中华威力
+       'SHK137': 'XLV',    # 康健护理
+       'SHK145': 'EWH'     # 恒指ESG→同用MSCI香港
+   }
 VIX_SYMBOL = '^VIX'
 PROJECT_ROOT = Path(__file__).parent.parent  # 關鍵修正點
 DATA_DIR = PROJECT_ROOT / "data" / "etfs"
